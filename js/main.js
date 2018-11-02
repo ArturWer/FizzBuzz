@@ -4,6 +4,9 @@ function writeResults(string) {
 	let btn = document.createElement("button");
 	let content = document.createTextNode(string);
 	btn.appendChild(content);
+	if (string === "FizzBuzz") {
+		btn.className = "fizzBuzz";
+	}
 	main.appendChild(btn);
 }
 
